@@ -1,40 +1,40 @@
 <script>
-	import Gooey from '$lib/extras/Gooey.svelte';
-	import { onMount } from 'svelte';
+	// import Gooey from '$lib/extras/Gooey.svelte';
+	// import { onMount } from 'svelte';
 
-	let gooeyBlur = 10;
+	// let gooeyBlur = 10;
 
-	function mouseCoords(node) {
-		function handleMouseMove(event) {
-			const x = event.clientX;
-			const y = event.clientY;
-			// offset the x and y to the center of the element
-			const rect = node.getBoundingClientRect();
-			const offsetX = x - rect.left - rect.width / 2;
-			const offsetY = y - rect.top - rect.height / 2 + 90; // add the scroll position to the calculation
+	// function mouseCoords(node) {
+	// 	function handleMouseMove(event) {
+	// 		const x = event.clientX;
+	// 		const y = event.clientY;
+	// 		// offset the x and y to the center of the element
+	// 		const rect = node.getBoundingClientRect();
+	// 		const offsetX = x - rect.left - rect.width / 2;
+	// 		const offsetY = y - rect.top - rect.height / 2 + 90; // add the scroll position to the calculation
 
-			node.style.setProperty('--x', `${offsetX}px`);
-			node.style.setProperty('--y', `${offsetY}px`);
+	// 		node.style.setProperty('--x', `${offsetX}px`);
+	// 		node.style.setProperty('--y', `${offsetY}px`);
 
-			// node.style.setProperty('--y', `${y}px`);
-		}
+	// 		// node.style.setProperty('--y', `${y}px`);
+	// 	}
 
-		window.addEventListener('mousemove', handleMouseMove);
+	// 	window.addEventListener('mousemove', handleMouseMove);
 
-		return {
-			destroy() {
-				window.removeEventListener('mousemove', handleMouseMove);
-			}
-		};
-	}
+	// 	return {
+	// 		destroy() {
+	// 			window.removeEventListener('mousemove', handleMouseMove);
+	// 		}
+	// 	};
+	// }
 
-	onMount(() => {
-		const interval = setInterval(() => {
-			gooeyBlur = Math.random() * 10;
-		}, 1000);
+	// onMount(() => {
+	// 	const interval = setInterval(() => {
+	// 		gooeyBlur = Math.random() * 10;
+	// 	}, 1000);
 
-		return () => clearInterval(interval);
-	});
+	// 	return () => clearInterval(interval);
+	// });
 </script>
 
 <div class="h-screen items-center justify-center flex">
@@ -62,9 +62,9 @@
 				>
 			</a>
 			<figure class="">
-				<!-- <section class="img-bg" /> -->
+				<section class="img-bg" />
 
-				<div class="h-[200px] z-[-1] absolute" use:mouseCoords>
+				<!-- <div class="h-[200px] z-[-1] absolute" use:mouseCoords>
 					<Gooey blur={gooeyBlur} alphaPixel={18} alphaShift={-7} class="h-full w-full">
 						<div
 							class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[65px] rounded-full bg-blue-500 blur-md md:mt-2"
@@ -73,7 +73,7 @@
 							class="absolute left-[--x] top-[--y] -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-cyan-300 blur-md"
 						/>
 					</Gooey>
-				</div>
+				</div> -->
 				<h1
 					class="mb-4 text-4xl font-extrabold tracking-tight leading-none bg-300% font-bold bg-gradient-to-r from-blue-700 via-pink-400 to-green-400 text-transparent bg-clip-text animate-gradient md:text-5xl lg:text-6xl"
 				>
