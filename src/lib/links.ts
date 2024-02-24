@@ -1,0 +1,1 @@
+export const wpp_link = 'https://wa.me/5531997873559?text=Ei%20tudo%20bem!%20Gostaria%20de%20tirar%20dúvidas%20sobre%20umenu'
