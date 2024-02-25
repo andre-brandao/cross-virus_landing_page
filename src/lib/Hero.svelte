@@ -75,7 +75,7 @@
 					</Gooey>
 				</div> -->
 				<h1
-					class="mb-4 text-4xl font-extrabold tracking-tight leading-none bg-300% font-bold bg-gradient-to-r from-blue-700 via-pink-400 to-green-400 text-transparent bg-clip-text animate-gradient md:text-5xl lg:text-6xl"
+					class="mb-4 text-4xl font-extrabold tracking-tight leading-none bg-300% font-bold bg-gradient-to-r from-orange-400 via-red-400 to-orange-400 text-transparent bg-clip-text animate-gradient md:text-5xl lg:text-6xl"
 				>
 					CrossVirus AI
 				</h1>

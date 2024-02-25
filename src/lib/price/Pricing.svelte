@@ -1,21 +1,21 @@
 <script>
 	import { wpp_link } from '../links';
 
-	let feat1 = 'Cardapio de Produtos';
-	let feat2 = 'Adicionais e Pedidos Direto para a Cozinha';
+	let feat1 = 'Cardapio de funcionalidades';
+	let feat2 = 'Envio de Emails';
 	let feat5 = 'Controle de Mesas';
-	let feat3 = 'Relatorios de Vendas';
-	let feat4 = 'Controle de Estoque';
+	let feat3 = 'Relatorios ';
+	let feat4 = 'Monitoramento';
 </script>
 
 <section class="bg-white dark:bg-gray-900">
 	<div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
 		<div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
 			<h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-				Feito para restaurantes e bares de todos os tamanhos
+				Feito para prefeituras de todos os tamanhos
 			</h2>
 			<p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">
-				Escolha o plano que melhor se encaixa com o seu negocio
+				Escolha o plano que melhor se encaixa com sua situação
 			</p>
 		</div>
 		<div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
